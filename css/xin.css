@@ -1,0 +1,802 @@
+body, p, ul, h1, h2, h3, h4, h5, h6, ol, dd, dl, input, i, em {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: normal;
+    outline: none;
+    border: 0;
+    font-style: normal;
+    font-size: 14px;
+    font-family: '微软雅黑';
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#header {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    box-shadow: 0px 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    position: relative;
+}
+
+.header_left {
+    float: left;
+    flex: 2;
+    position: relative;
+}
+
+.header_right {
+    float: right;
+    flex: 1;
+    height: 100%;
+    background: url("../image/HeaderBg.png") no-repeat center/cover;
+    padding: 8px 0;
+    display: flex;
+}
+
+.header_right .nav_left {
+    float: left;
+    margin-left: 36px;
+    color: #9FA6AD;
+    flex: 1;
+}
+
+.header_right .nav_left h2 {
+    color: #DDE1E4;
+    font-size: 20px;
+    position: relative;
+}
+
+.header_right .nav_left p {
+    padding-top: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.header_right .nav_right {
+    width: auto;
+    overflow: hidden;
+    padding-left: 10px;
+    flex: 1;
+    position: relative;
+}
+
+.header_right .nav_right > .iconLog {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+.header_right .nav_right > .iconLog > span {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.header_right .nav_right > .iconLog > span > img {
+    width: 100%;
+}
+
+.iconLog {
+    display: table;
+    position: relative;
+}
+
+.icon_weixin > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.icon_qq > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.icon_weibo > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.icon_in > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.iconLog .NochangeIcon {
+    display: block;
+}
+
+.iconLog:hover .NochangeIcon {
+    display: none;
+}
+
+.iconLog:hover .changeIcon {
+    display: block;
+}
+
+.header_right .nav_right .go_in {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 0px;
+    right: 38px;
+    cursor: pointer;
+    background: url(../image/icon/goIn.png) no-repeat center/cover;
+}
+
+#Icon {
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.Country {
+    display: block;
+    float: right;
+    width: 24px;
+    height: 24px;
+    background: #9FA6AD;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 72px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.Country:hover {
+    background: #E81194;
+}
+
+.Main {
+    width: 1200px;
+    margin: 104px auto 50px;
+}
+
+.Main_list_on {
+    width: 796px;
+}
+
+.Main_bg {
+    width: 100%;
+    height: 100%;
+}
+
+.choose {
+    height: 0px;
+    position: absolute;
+    left: 0;
+    background: #5D6268;
+    top: 100px;
+    width: 800px;
+    transition: all .3s;
+}
+
+.button {
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+}
+
+.button .icon-bar {
+    background: #000;
+}
+
+.choose li {
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background: transparent;
+}
+
+.addInforemation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    background: #9FA6AD;
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.addInforemation > span {
+    color: #fff;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.addInforemation > h3 {
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.choose > li {
+    padding-left: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.choose > li:hover span {
+    border-bottom: 1px solid #E81194;
+}
+
+.Main_list_on .lt_nna {
+    padding: 2px;
+    height: 50%;
+    background: transparent;
+}
+
+.Main_list_ons {
+    height: 238px;
+}
+
+.Main_bg {
+    width: 100%;
+    height: 100%;
+}
+
+.brandIndex {
+    height: auto;
+    padding: 20px 30px;
+}
+
+.Main_list_on .Main_bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Main_list_wenz {
+    background: #9FA6AD;
+    padding: 20px 30px;
+    margin: 0 0 4px 0;
+}
+
+.Main_list_foot {
+    height: 238px;
+}
+
+.Main_list_foots {
+    padding: 20px 30px;
+}
+
+.show {
+    width: 192px;
+    height: 100px;
+    background: #5D6268;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-left: 20px;
+    padding-top: 16px;
+}
+
+.show p {
+    font-size: 14px;
+}
+
+.show h1 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.Main_list_tw {
+    margin: 0 4px 4px;
+}
+
+.Main_list_find {
+    padding: 20px 30px;
+}
+
+.Main_list_find .Bck_hv {
+    background: #e81194;
+    height: 100%;
+    position: relative;
+}
+
+.Main_list_find .Bck_hv img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.Main_list_find .Bck_hv img:hover {
+    opacity: .2;
+}
+
+.Main_list_find .find_left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.Main .Main_list_find .find_left > .nav_title {
+    color: #E81194;
+    font-size: 30px;
+}
+
+.Main .Main_list_find .find_left .nav_bottom {
+    position: absolute;
+    bottom: 40px;
+}
+
+.Main_list_find .find_right {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.Main_list_find .find_right .four {
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #5D6268;
+}
+
+.Main_list_find .find_right .four h3 {
+    float: left;
+    color: #E81194;
+    font-size: 14px;
+    line-height: 80px;
+}
+
+.Main_list_find .find_right .four img {
+    width: 80px;
+    float: right;
+}
+
+.Foot {
+    height: 100%;
+}
+
+.Foot input {
+    background: transparent;
+    border-bottom: 1px solid #9CA1A5;
+    line-height: 30px;
+}
+
+.Foot label {
+    color: #E81194;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.clickFoot input {
+    width: 100%;
+}
+
+.clickFoot label {
+    line-height: 30px;
+    color: #5D6268;
+    float: left;
+}
+
+.clickFoot span {
+    float: right;
+    font-size: 30px;
+}
+
+.btms_lt {
+    width: 25%;
+    float: left;
+    margin-right: 4px;
+}
+
+.btms_lts {
+    width: 32%;
+    margin: 20px auto;
+}
+
+.popine {
+    width: 100%;
+    display: table;
+    float: left;
+}
+
+.popine .popin {
+    height: 238px;
+    width: 396px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    float: left;
+    background: #F6F6F6;
+    padding: 20px 20px 20px 30px;
+}
+
+.popin .popin_top {
+    height: 50%;
+}
+
+.popin .popin_top .popin_top_image {
+    width: 98px;
+    float: left;
+}
+
+.popin .popin_top .content {
+    float: left;
+    padding-left: 8px;
+}
+
+.popinL {
+    width: 800px;
+    float: left;
+    height: auto;
+}
+
+.popin .popin_top .content h3 {
+    margin: 20px 0 10px 0;
+    font-size: 18px;
+    color: #E81194;
+}
+
+.popin .popin_top .content p {
+    margin: 0;
+    font-size: 14px;
+    color: #2C2C2E;
+}
+
+.popin .popin_bottom {
+    height: 50%;
+    padding-top: 20px;
+}
+
+.com_topShow {
+    color: #000000;
+    font-size: 16px;
+}
+
+.com_title {
+    font-size: 22px;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.com_navP {
+    color: #f3f3f3;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.go_going {
+    position: absolute;
+    bottom: 10%;
+    width: 340px;
+}
+
+.go_going a {
+    color: #f3f3f3;
+}
+
+.go_going .clickGo {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+.go_going .showStrong {
+    font-size: 28px;
+    color: #000;
+    float: left;
+}
+
+.go_going .going_left {
+    width: 140px;
+    float: left;
+}
+
+.go_going .going_right {
+    width: 140px;
+    height: 110px;
+    float: right;
+    background: #9FA6AD;
+    transition: all .3s;
+}
+
+.going_left_img {
+    width: 170px;
+    height: 150px;
+    float: left;
+}
+
+.lt_nna {
+    width: 50%;
+    float: left;
+    background: #8F9399;
+}
+
+.lt_nna img {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.going_right_txt {
+    width: 170px;
+    height: 150px;
+    float: right;
+}
+
+.going_right_txt .texRi {
+    float: right;
+    line-height: 138px;
+}
+
+.going_right_txt .texRi b {
+    padding-right: 10px;
+    color: #672C86;
+    font-size: 12px;
+}
+
+.going_right_txt .texRi a {
+    color: #672C86;
+    font-weight: 600;
+    border-color: #672C86;
+    margin-top: 52px;
+    font-size: 14px;
+}
+
+.going_right a {
+    display: block;
+    padding: 20px 20px;
+}
+
+.going_right .Go_create {
+    padding: 10px 10px 0 0;
+    text-align: right;
+    font-size: 24px;
+}
+
+.going_right:hover {
+    background: #E81194;
+}
+
+.Go_icon {
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    right: 0;
+    border: 1px solid #fff;
+    float: right;
+    font-family: '宋体';
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.Go_icon_xs {
+    transform: rotate(90deg);
+}
+
+.Go_image {
+    display: block;
+    float: right;
+    width: 100px !important;
+}
+
+.MainL {
+    margin-right: 0;
+}
+
+.MainR {
+    margin-left: 0;
+}
+
+.backgrounds {
+    background: #9FA6AD;
+}
+
+.titleBg {
+    color: #E81194;
+}
+
+.titleBgT {
+    color: #8F9399;
+}
+
+.titleBgH {
+    color: #2C2C2E;
+}
+
+.Main ul {
+    display: table;
+}
+
+li {
+    width: 396px;
+    height: 480px;
+    overflow: hidden;
+    float: left;
+    margin: 0 4px 4px 0;
+    position: relative;
+    background: #DDE1E4;
+}
+
+.Main img {
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    width: 100%;
+}
+
+.form input {
+    width: 100%;
+    line-height: 30px;
+    /*margin-top: 10px;*/
+    background: transparent;
+    border-bottom: 2px solid #ccc;
+    color: #E81194;
+    padding: 0 10px;
+}
+
+.form #submit {
+    margin: 40px 0 0;
+    width: 15%;
+    float: right;
+    cursor: pointer;
+}
+
+.Client {
+    height: 400px;
+}
+
+.span {
+    height: 40px;
+    text-align: right;
+    line-height: 40px;
+    color: #E81194;
+    font-size: 16px;
+    width: 100%;
+    border-bottom: 4px solid #5D6268;
+}
+
+.Form_botm {
+    width: 100%;
+    display: table;
+    margin-top: 6px;
+}
+
+.Left_form {
+    width: 268px;
+    border-top: 2px solid #5D6268;
+    float: left;
+}
+
+.Right_form {
+    width: 60%;
+    border-top: 2px solid #5D6268;
+    float: right;
+}
+
+.go_going_lt {
+    width: 200px;
+    height: 140px;
+    line-height: 140px;
+    float: left;
+    font-size: 12px;
+}
+
+.lt_nna {
+    width: 50%;
+    height: 50%;
+    float: left;
+    background: #9FA6AD;
+    border: 1px solid #BFC4C9;
+    box-sizing: border-box;
+}
+
+.go_going_lt .lt_nnas {
+    width: 100%;
+    height: 50%;
+    float: left;
+    background: #9FA6AD;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.go_going_lt .lt_nnas h3 {
+    font-size: 12px;
+    margin: 6px 0 12px;
+    line-height: 12px;
+    color: #000;
+}
+
+.go_going_lt .lt_nnas p {
+    font-size: 12px;
+    line-height: 16px;
+    color: #F8F8F9;
+}
+
+.lt {
+    position: relative;
+}
+
+.btn_nv {
+    position: absolute;
+    width: 100%;
+    display: table;
+    top: 20px;
+    padding: 0 10px;
+}
+
+.btn_lt {
+    float: left;
+}
+
+.btn_rt {
+    float: right;
+}
+
+.luoboMain > img {
+    width: 70px;
+    height: auto;
+    float: left;
+}
+
+#footer {
+    width: 100%;
+    background: #fff;
+}
+
+.footer {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#footer .footer > .foot_left {
+    float: left;
+    width: 20px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+#footer .footer > .foot_right {
+    float: right;
+    padding-top: 5%;
+}
+
+#footer p {
+    font-size: 14px;
+}

@@ -1,0 +1,909 @@
+body, p, ul, h1, h2, h3, h4, h5, h6, ol, dd, dl, input, i, em {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: normal;
+    outline: none;
+    border: 0;
+    font-style: normal;
+    font-size: 14px;
+    font-family: '微软雅黑';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#Icon {
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+#header {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    box-shadow: 0px 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    position: relative;
+}
+
+.header_left {
+    float: left;
+    flex: 2;
+}
+
+.header_right {
+    float: right;
+    flex: 1;
+    height: 100%;
+    background: url("../image/HeaderBg.png") no-repeat center/cover;
+    padding: 8px 0;
+    display: flex;
+}
+
+.header_right .nav_left {
+    float: left;
+    margin-left: 36px;
+    color: #9FA6AD;
+    flex: 1;
+}
+
+.header_right .nav_left h2 {
+    color: #DDE1E4;
+    font-size: 20px;
+    position: relative;
+}
+
+.NochangeIcon {
+    display: block;
+    z-index: 1;
+}
+
+.iconLog {
+    display: table;
+    position: relative;
+}
+
+.icon_weixin > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.icon_qq > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.icon_weibo > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.icon_in > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.iconLog .NochangeIcon {
+    display: block;
+}
+
+.iconLog:hover .NochangeIcon {
+    display: none;
+}
+
+.iconLog:hover .changeIcon {
+    display: block;
+}
+
+.Country {
+    display: block;
+    float: right;
+    width: 24px;
+    height: 24px;
+    background: #9FA6AD;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 72px;
+}
+
+.Country:hover {
+    background: red;
+}
+
+.header_right .nav_left p {
+    padding-top: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.header_right .nav_right {
+    width: auto;
+    overflow: hidden;
+    padding-left: 10px;
+    flex: 1;
+    position: relative;
+}
+
+.header_right .nav_right > .iconLog {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+.header_right .nav_right > .iconLog > span {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.header_right .nav_right > .iconLog > span > img {
+    width: 100%;
+}
+
+.go_in {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 0px;
+    right: 38px;
+    cursor: pointer;
+    background: url("../image/icon/goIn.png") no-repeat center/cover;
+}
+
+.Main {
+    width: 1200px;
+    margin: 104px auto 50px;
+    overflow: hidden;
+}
+
+.Main > ul {
+    margin: 0 -10px;
+}
+
+.Main > ul > li {
+    width: 402px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    float: left;
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Main img {
+    width: 100%;
+}
+
+.Main > ul > .Main_list_on {
+    width: 808px;
+}
+
+.Main > ul > .Main_list_on .lt_nna {
+    width: 400px;
+    height: 238px;
+    margin: 0 4px 4px 0;
+}
+
+.Main ul .Main_list_b {
+    background: #F4F4F4;
+    padding: 20px 30px;
+}
+
+.Main_list_b .list_top {
+    width: 100%;
+    line-height: 30px;
+    display: table;
+}
+
+.Main_list_b .list_bottom {
+    width: 100%;
+    height: 140px;
+    display: table;
+    position: relative;
+}
+
+.list_bottom .list_bottom_po {
+    width: 100%;
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+}
+
+.list_bottom .list_bottom_po a {
+    margin-top: -10px;
+}
+
+.Main_list_b h1 {
+    font-size: 18px;
+    color: #E9339E;
+    display: block;
+    float: left;
+    line-height: 80px;
+    width: 50%;
+}
+
+.Main_list_b p {
+    margin: 10px 0;
+    color: #5D6268;
+}
+
+.Main_list_b span {
+    color: #E9339E;
+    font-size: 12px;
+}
+
+.Main_list_b img {
+    display: block;
+    float: right;
+    width: 100px;
+}
+
+.Main > ul > .introduce {
+    display: table;
+}
+
+.Main > ul > .introduce > .Main_list_aggregate {
+    width: 808px;
+    height: 966px;
+    float: left;
+    padding-left: 26px;
+    padding-right: 20px;
+    border-left: 1px solid #ccc;
+}
+
+.Main > ul > .introduce > .Main_list_foot {
+    height: 238px;
+    width: 402px;
+    margin: 2px;
+    float: left;
+}
+
+.Main_list_aggregate h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0 10px;
+}
+
+.Main_list_aggregate p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #5D6268;
+    margin-bottom: 22px;
+}
+
+.Main > ul .Main_list_foot {
+    height: 238px;
+}
+
+.Main > ul .Main_list_foots {
+    background: #9FA6AD;
+    padding: 10px 30px
+}
+
+.Main > ul .Main_list_find {
+    background: #DDE1E4;
+}
+
+.Main > ul .Main_list_ons {
+    width: 808px;
+    height: 238px;
+}
+
+.brandIndex {
+    height: auto;
+    padding: 20px 30px;
+}
+
+.Main > ul .Main_list_foot > a {
+    display: block;
+}
+
+.Main > ul .Main_list_foot > .show {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 192px;
+    height: 100px;
+    background: #5D6268;
+    padding-left: 30px;
+
+}
+
+.Main > ul .Main_list_foot > .show p {
+    font-size: 12px;
+    font-weight: 600;
+    margin: 14px 0 20px;
+}
+
+.Main > ul .Main_list_foot > .show h1 {
+    font-size: 16px;
+    color: #C7C9CB;
+}
+
+.Main_bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Main_bg > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .6s;
+    opacity: 0;
+}
+
+.Main_list_find {
+    padding: 20px 30px 0;
+}
+
+.Main_list_find > .find_left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.Main .Main_list_find > .find_left > .nav_title {
+    color: #E81194;
+    font-size: 30px;
+}
+
+.Main .Main_list_find > .find_left .nav_bottom {
+    position: absolute;
+    bottom: 40px;
+}
+
+.Main_list_find > .find_right {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.Main_list_find > .find_right .four {
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #5D6268;
+}
+
+.Main_list_find > .find_right .four h3 {
+    float: left;
+    color: #E81194;
+    font-size: 14px;
+    line-height: 80px;
+}
+
+.Main_list_find > .find_right .four img {
+    width: 80px;
+    margin-top: 10px;
+    float: right;
+}
+
+.Foot {
+    height: 100%;
+}
+
+.Foot input {
+    background: transparent;
+    border-bottom: 1px solid #9CA1A5;
+    line-height: 30px;
+}
+
+.Foot label {
+    color: #E81194;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.Main_list_find span {
+    color: #E81194;
+}
+
+.Main_list_find .content {
+    height: auto;
+    margin-top: 20px;
+}
+
+.Main_list_find .content h3 {
+    font-size: 20px;
+    color: #575959;
+}
+
+.Main_list_find .content p {
+    margin-top: 20px;
+    color: #8F9399;
+    line-height: 26px;
+}
+
+.find_navP {
+    margin-top: 10px !important;
+    color: #46474A !important;
+}
+
+.find_navH {
+    font-size: 34px !important;
+    font-weight: 500;
+    color: #000 !important;
+}
+
+.Main_list_on .content > p {
+    margin-top: 20px;
+    color: #8F9399;
+    line-height: 26px;
+    font-size: 12px;
+}
+
+.Main_list_on .Foot input {
+    width: 100%;
+}
+
+.Main_list_on .Foot label {
+    line-height: 30px;
+    color: #5D6268;
+    float: left;
+}
+
+.Main_list_on .Foot span {
+    float: right;
+    font-size: 30px;
+}
+
+.Main_list_finds {
+    background: #9FA6AD !important;
+}
+
+.Main_list_finds span {
+    color: #46474A;
+}
+
+.Main_list_finds h3 {
+    color: #f3f3f3 !important;
+}
+
+.Main_list_finds p {
+    color: #DDE1E4 !important;
+}
+
+.Main_list_pingPai {
+    background: #9FA6AD;
+    padding: 20px 30px;
+}
+
+.com_topShow {
+    font-size: 14px;
+    color: #000000;
+}
+
+.com_topShow em {
+    font-weight: 600;
+    font-style: italic;
+    padding-right: 4px;
+}
+
+.com_title {
+    font-size: 22px;
+    margin: 30px 0;
+    color: #fff;
+}
+
+.com_navP {
+    line-height: 24px;
+    padding-bottom: 30px;
+    color: #f3f3f3;
+}
+
+.go_going {
+    /*margin-top: 50px;*/
+    position: relative;
+    bottom: -26px;
+}
+
+.go_going_lt {
+    width: 200px;
+    height: 140px;
+    line-height: 140px;
+    float: left;
+    font-size: 12px;
+}
+
+.lt_nna {
+    width: 50%;
+    height: 50%;
+    float: left;
+    background: #9FA6AD;
+    border: 1px solid #BFC4C9;
+    box-sizing: border-box;
+}
+
+.go_going_lt .lt_nnas {
+    width: 100%;
+    height: 50%;
+    float: left;
+    background: #9FA6AD;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.go_going_lt .lt_nnas h3 {
+    font-size: 12px;
+    margin: 6px 0 12px;
+    line-height: 12px;
+    color: #000;
+}
+
+.go_going_lt .lt_nnas p {
+    font-size: 12px;
+    line-height: 16px;
+    color: #F8F8F9;
+}
+
+.lt_nnas .btn_nv {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.lt_nnas .btn_nv .btn_lt {
+    float: left;
+}
+
+.lt_nnas .btn_nv .btn_rt {
+    float: right;
+}
+
+.go_going_lt .lt_nna:hover {
+    background: #BFC4C9;
+}
+
+.go_going_rt {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 140px;
+    height: 140px;
+    float: right;
+}
+
+.go_going .btms_lt {
+    width: 25%;
+    float: left;
+    margin-right: 4px;
+}
+
+.btms_lts {
+    width: 32% !important;
+    margin: 20px 0;
+}
+
+.popine {
+    width: 100%;
+    display: table;
+    float: left;
+}
+
+.popinL {
+    width: 812px;
+    float: right;
+    height: auto;
+}
+
+.popine .Main_list_find {
+    padding: 20px 30px;
+    width: 402px;
+    height: 480px;
+    float: left;
+    position: relative;
+}
+
+.popin {
+    height: 238px;
+    width: 402px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    float: left;
+    background: #F6F6F6;
+    padding: 20px 20px 20px 30px;
+}
+
+.popin .popin_top {
+    height: 50%;
+}
+
+.popin .popin_top .popin_top_image {
+    width: 98px;
+    float: left;
+}
+
+.popin .popin_top .content {
+    float: left;
+    padding-left: 8px;
+}
+
+.popin .popin_top .content h3 {
+    margin: 20px 0 10px 0;
+    font-size: 18px;
+    color: #E81194;
+}
+
+.popin .popin_top .content p {
+    margin: 0;
+    font-size: 14px;
+    color: #2C2C2E;
+}
+
+.popin .popin_bottom {
+    height: 50%;
+    padding-top: 20px;
+}
+
+.clickGo {
+    color: #f3f3f3;
+    display: block;
+    width: 100px;
+    padding: 6px;
+    border: 1px solid #f3f3f3;
+}
+
+.go_going span {
+    color: #000;
+    font-size: 34px;
+    float: left;
+}
+
+.Go_Icon_nei {
+    display: block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    margin-right: 14px;
+    color: #5D6268;
+}
+
+.Go_icon {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    float: right;
+    text-align: center;
+    line-height: 34px;
+    font-family: '宋体';
+    font-weight: 600;
+    font-size: 26px;
+    color: #fff;
+}
+
+.Go_icon_tt {
+    border: 1px solid #000;
+    font-size: 14px;
+    color: #000;
+    margin-left: 10px;
+    margin-top: 54px
+}
+
+.Go_icon_xs {
+    border: 1px solid #E81194;
+    font-size: 14px;
+    color: #E81194;
+    margin-left: 10px;
+    margin-top: 54px;
+    transform: rotate(90deg);
+}
+
+.Go_icon_sp {
+    border: 1px solid #672C86;
+    font-size: 14px;
+    color: #672C86;
+    margin-left: 10px;
+    margin-top: 54px
+}
+
+.Go_icon:hover {
+    background: #fff;
+    color: #ccc;
+}
+
+.Bck_hv {
+    background: #E81194;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Bck_hv img {
+    width: 350px;
+    opacity: .5;
+    transition: all .2s;
+}
+
+.Bck_hv:hover img {
+    opacity: 1;
+}
+
+.go_going .going_left {
+    float: left;
+    width: 140px;
+}
+
+.go_going .going_right {
+    float: right;
+    width: 140px;
+    height: 92px;
+    background: #9FA6AD;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.go_going .going_right:hover {
+    background: #E81194;
+}
+
+.go_going .going_right a {
+    margin: 10px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.go_going .going_right .gogo {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 100;
+    color: #fff;
+    bottom: 0;
+    right: 0;
+}
+
+.Main_list_ons p {
+    color: #D5D6D7;
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 36px;
+}
+
+#footer {
+    width: 100%;
+    background: #fff;
+}
+
+.footer {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#footer .footer > .foot_left {
+    float: left;
+    width: 20px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+#footer .footer > .foot_right {
+    float: right;
+    padding-top: 5%;
+}
+
+#footer p {
+    font-size: 14px;
+}
+
+@media all and (min-width: 900px) and (max-width: 1199px) {
+    /*li{*/
+    /*width: 900px;*/
+    /*}*/
+    /*li img{*/
+    /*width:100%;*/
+    /*}*/
+    .header {
+        width: 900px;
+    }
+
+    .Main {
+        width: 900px;
+    }
+
+    .Main ul {
+        width: 900px;
+    }
+
+    .Main ul li {
+        width: 100%;
+    }
+
+    .Main ul li.Main_list_ons {
+        width: 100%;
+    }
+
+    .Main ul .introduce {
+        width: 100%;
+    }
+
+    .Main ul .introduce .Main_list_aggregate {
+        width: 100%;
+    }
+
+    .Main ul .introduce .Main_list_foot {
+        width: 446px;
+    }
+
+    #footer .footer {
+        width: 900px;
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 899px) {
+    .header {
+        width: 600px;
+    }
+
+    .header .header_right {
+        display: none;
+    }
+
+    .Main {
+        width: 600px;
+    }
+
+    .Main ul {
+        width: 600px;
+    }
+
+    .Main ul li {
+        width: 100%;
+    }
+
+    .Main ul li.Main_list_ons {
+        width: 100%;
+    }
+
+    .Main ul .introduce {
+        width: 100%;
+
+    }
+
+    .Main ul .introduce .Main_list_aggregate {
+        width: 100%;
+        height: auto;
+    }
+
+    .Main ul .introduce .Main_list_foot {
+        width: 100%;
+    }
+
+    #footer .footer {
+        width: 600px;
+    }
+}
+
